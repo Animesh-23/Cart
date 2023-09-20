@@ -33,7 +33,14 @@ const Product = ({
         </span>
       </div>
       <div className=" flex flex-col items-center">
-        <img src={Up} width={"30px"} height={"30px"} />
+        <img
+          src={Up}
+          width={"30px"}
+          height={"30px"}
+          onClick={() => {
+            dispatch();
+          }}
+        />
         <span>{total_items}</span>
         <img src={Down} width={"30px"} height={"30px"} />
       </div>
